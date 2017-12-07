@@ -39,7 +39,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.example.Driver</mainClass>
+                            <mainClass>weblogs.analysis.prep.kpi.LogPreprocessor</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

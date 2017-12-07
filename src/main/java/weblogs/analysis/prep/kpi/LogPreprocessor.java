@@ -44,10 +44,10 @@ public class LogPreprocessor {
 
 		FileSystem fs = FileSystem.get(new Configuration());
 		fs.delete(new Path("hdfs:/user/priyank/output05"), true);
-		FileOutputFormat.setOutputPath(job, new Path("hdfs:/user/priyank/output05"));
-		FileInputFormat.addInputPath(job, new Path("hdfs:/user/priyank/sample_logs"));
+		FileOutputFormat.setOutputPath(job, new Path("hdfs:/logs/output"));
+		FileInputFormat.addInputPath(job, new Path("hdfs:/logs/input/sample_logs"));
 		try {
-			FileOutputFormat.setOutputPath(job, new Path("hdfs:/user/priyank/output05"));
+			FileOutputFormat.setOutputPath(job, new Path("hdfs:/logs/output"));
 		} catch (Exception e) {
 			// Runtime.getRuntime().exec("hadoop dfs -rmr
 			// hdfs:/user/priyank/output05");
